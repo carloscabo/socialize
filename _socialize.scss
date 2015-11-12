@@ -1,0 +1,96 @@
+/*http://fontello.com/*/
+
+@font-face {
+  font-family: 'socialize';
+  src: url('/cortefiel/ctf/fonts/socialize.eot?28125409');
+  src: url('/cortefiel/ctf/fonts/socialize.eot?28125409#iefix') format('embedded-opentype'),
+       url('/cortefiel/ctf/fonts/socialize.woff?28125409') format('woff'),
+       url('/cortefiel/ctf/fonts/socialize.ttf?28125409') format('truetype'),
+       url('/cortefiel/ctf/fonts/socialize.svg?28125409#socialize') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'socialize';
+    src: url('../font/socialize.svg?28125409#socialize') format('svg');
+  }
+}
+*/
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "socialize", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-gplus:before             { content: '+'; } /* '+' */ /* \2b */
+.icon-share:before             { content: '-'; } /* '-' */ /* \2d */
+.icon-codeopen:before          { content: '1'; } /* '1' */ /* \31 */
+.icon-delicious:before         { content: '2'; } /* '2' */ /* \32 */
+.icon-git:before               { content: '3'; } /* '3' */ /* \33 */
+.icon-github:before            { content: '4'; } /* '4' */ /* \34 */
+.icon-html5:before             { content: '5'; } /* '5' */ /* \35 */
+.icon-stackoverflow:before     { content: '6'; } /* '6' */ /* \36 */
+.icon-tencent-weibo:before     { content: '7'; } /* '7' */ /* \37 */
+.icon-trello:before            { content: '8'; } /* '8' */ /* \38 */
+.icon-twitch:before            { content: '9'; } /* '9' */ /* \39 */
+.icon-apple:before             { content: 'A'; } /* 'A' */ /* \41 */
+.icon-behance:before           { content: 'B'; } /* 'B' */ /* \42 */
+.icon-deviantart:before        { content: 'D'; } /* 'D' */ /* \44 */
+.icon-foursquare:before        { content: 'F'; } /* 'F' */ /* \46 */
+.icon-yahoo:before             { content: 'H'; } /* 'H' */ /* \48 */
+.icon-linkedin:before          { content: 'I'; } /* 'I' */ /* \49 */
+.icon-drupal:before            { content: 'O'; } /* 'O' */ /* \4f */
+.icon-paypal:before            { content: 'P'; } /* 'P' */ /* \50 */
+.icon-slideshare:before        { content: 'S'; } /* 'S' */ /* \53 */
+.icon-tumblr:before            { content: 'T'; } /* 'T' */ /* \54 */
+.icon-vine:before              { content: 'V'; } /* 'V' */ /* \56 */
+.icon-youtube:before           { content: 'Y'; } /* 'Y' */ /* \59 */
+.icon-blank:before             { content: 'Z'; } /* 'Z' */ /* \5a */
+.icon-android:before           { content: 'a'; } /* 'a' */ /* \61 */
+.icon-bitbucket:before         { content: 'b'; } /* 'b' */ /* \62 */
+.icon-cc:before                { content: 'c'; } /* 'c' */ /* \63 */
+.icon-digg:before              { content: 'd'; } /* 'd' */ /* \64 */
+.icon-facebook:before          { content: 'f'; } /* 'f' */ /* \66 */
+.icon-google:before            { content: 'g'; } /* 'g' */ /* \67 */
+.icon-hacker-news:before       { content: 'h'; } /* 'h' */ /* \68 */
+.icon-instagramm:before        { content: 'i'; } /* 'i' */ /* \69 */
+.icon-xing:before              { content: 'k'; } /* 'k' */ /* \6b */
+.icon-dribbble:before          { content: 'o'; } /* 'o' */ /* \6f */
+.icon-pinterest-circled:before { content: 'p'; } /* 'p' */ /* \70 */
+.icon-skype:before             { content: 's'; } /* 's' */ /* \73 */
+.icon-twitter:before           { content: 't'; } /* 't' */ /* \74 */
+.icon-stumbleupon:before       { content: 'u'; } /* 'u' */ /* \75 */
+.icon-vimeo-squared:before     { content: 'v'; } /* 'v' */ /* \76 */
+.icon-windows:before           { content: 'w'; } /* 'w' */ /* \77 */
+.icon-dropbox:before           { content: 'x'; } /* 'x' */ /* \78 */
+.icon-youtube-play:before      { content: 'y'; } /* 'y' */ /* \79 */
