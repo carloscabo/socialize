@@ -41,45 +41,61 @@
 	}
 }
 
-.socialize.bg-fill > .sz {
-	color: $sz-bg-fill-col;
-	background-color: $sz-bg-fill-bgcol;
+.socialize.filled > .sz:before {
+	color: $sz-filled-col;
+	background-color: $sz-filled-bgcol;
 }
-.socialize.rounded > .sz {
-	border-radius: 100%;
-}
+.socialize.rounded > .sz,
 .socialize.rounded > .sz:before {
 	border-radius: 100%;
 }
 
-a.sz {
-	&:hover {
-		color: $sz-default-hover-col;
-		background-color: $sz-default-hover-bgcol;
-	}
-}
-
 @each $sz-service in $sz-services {
-  .sz-#{nth($sz-service,1)} {
+  .socialize > .sz-#{nth($sz-service,1)} {
     &:before {
       content: '#{nth($sz-service,2)}';
     }
-    .socialize.colored > &:before {
-      color: #{nth($sz-service,3)};
-    }
   }
+	.socialize > a.sz.sz-#{nth($sz-service,1)}:hover {
+		&:before {
+			color: #{nth($sz-service,3)};
+		}
+	}
+	.socialize.mono > a.sz.sz-#{nth($sz-service,1)}:hover {
+		&:before {
+			color: $sz-mono-hover-col;
+		}
+	}
+	.socialize.colored > .sz-#{nth($sz-service,1)} {
+		&:before {
+			color: #{nth($sz-service,3)};
+		}
+	}
   .socialize.colored > a.sz.sz-#{nth($sz-service,1)}:hover {
     &:before {
       color: $sz-colored-hover-col;
     }
   }
-	.socialize.bg-fill > a.sz.sz-#{nth($sz-service,1)}:hover {
+	.socialize.filled > a.sz.sz-#{nth($sz-service,1)}:hover {
 		&:before {
 			background-color: #{nth($sz-service,3)};
 			color: #{nth($sz-service,4)};
 		}
 	}
-
+	.socialize.filled.colored > .sz-#{nth($sz-service,1)} {
+		&:before {
+			background-color: #{nth($sz-service,3)};
+			color: #{nth($sz-service,4)};
+		}
+	}
+	.socialize.filled.colored > a.sz.sz-#{nth($sz-service,1)} {
+		&:hover {
+			&:before {
+				background-color: $sz-filled-hover-bgcol;
+				color: $sz-filled-hover-col;
+			}
+		}
+	}
 }
 
 /*

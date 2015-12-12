@@ -1,22 +1,27 @@
 // Icon sise
 $sz-icon-size: 48px;
 
-// Default icons with no backgroud
+// Default icons with transparent background
 $sz-default-col:         #ccc;
 $sz-default-bgcol:       transparent;
-$sz-default-hover-col:   #333;
+$sz-default-hover-col:   orange;
 $sz-default-hover-bgcol: transparent;
 
-// Icons with no bg with color of the brand
-$sz-colored-hover-col:   pink;
+// Monochromatic hover
+$sz-mono-hover-col:   orange;
 
-// Squared & rounded
-$sz-bg-fill-col:   #fff;
-$sz-bg-fill-bgcol: #ccc;
+// Hover when icons are colored
+$sz-colored-hover-col:   green;
+
+// Filled & rounded
+$sz-filled-col:   #fff;
+$sz-filled-bgcol: #ccc;
+$sz-filled-hover-col:   #fff;
+$sz-filled-hover-bgcol: purple;
 
 // Name // Char // Brand color // Text color when square - circle
 $sz-services:
-('share',       '\e906', '#666666',    '#fff'),
+('share',       '\e906', '#666666', '#fff'),
 ('facebook',    '\e900', '#3b5998', '#fff'),
 ('google-plus', '\e901', '#dd4b39', '#fff'),
 ('instagram',   '\e902', '#517fa4', '#fff'),
