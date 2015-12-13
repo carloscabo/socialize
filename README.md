@@ -12,7 +12,7 @@ Social media icons in font, and share functionallity in JS (WIP).
 4. Include `socialize.js`.
 5. For Facebook and Pinterest be sure to include the `OpenGraph` info in the header.
 
-# sample HTML block
+## sample HTML block
 ````html
 <div data-socialize class="filled rounded colored">
   <a href="#" class="sz sz-share"></a>
@@ -27,9 +27,9 @@ Social media icons in font, and share functionallity in JS (WIP).
 </div>
 ````
 
-# data to be shared
+## data to be shared
 
-By default `socialize` shares the data available in the `OpenGraph` tag in the document's header:
+By default `socialize` shares the data available in the `OpenGraph` tags in the document's header:
 
 ````html
 <meta property="og:title" content="Socialize"/>
@@ -52,7 +52,7 @@ But you can also define other data adding data-attributes to the share links, ad
 
 When usign **data-attributes** urls be sure to include **absolute paths**, most of the services dont admit relative URLs.
 
-# services workin right now
+## services workin right now
 
 - facebook
 - Twitter
@@ -61,9 +61,16 @@ When usign **data-attributes** urls be sure to include **absolute paths**, most 
 - Google Plus
 - Print
 
-# extending and adding new icons
+## extending and adding new icons
 
 In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, if you need to add a new icon, add it to this file, export an `svg` and use **IconMoon** service to regenerate the **socialize font**.
 
-# TO-DO
-socialize.js
+## known issues
+
+- If you are in `localhost` the sharing functionallity can fail, as some of the services get the data from the url.
+
+## TO-DO
+
+- Intesive testing
+- Add more services
+  - Share by email
