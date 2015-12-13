@@ -1,6 +1,8 @@
 # socialize
 Social media icons in font, and share functionallity in JS (WIP).
 
+<img src="https://raw.githubusercontent.com/carloscabo/socialize/master/snapshot.png">
+
 # usage
 1. Copy the socialize fonts in to your project.
 2. Edit the path to them in `socialize.scss`
