@@ -1,4 +1,43 @@
-@import "variables";
+//
+// Vars, color and settings
+//
+
+// Icon sise
+$sz-icon-size: 48px;
+
+// Default icons with transparent background
+$sz-default-col:         #ccc;
+$sz-default-bgcol:       transparent;
+$sz-default-hover-col:   orange;
+$sz-default-hover-bgcol: transparent;
+
+// Monochromatic hover
+$sz-mono-hover-col:   orange;
+
+// Hover when icons are colored
+$sz-colored-hover-col:   green;
+
+// Filled & rounded
+$sz-filled-col:   #fff;
+$sz-filled-bgcol: #ccc;
+$sz-filled-hover-col:   #fff;
+$sz-filled-hover-bgcol: purple;
+
+// Name // Char // Brand color // Text color when square - circle
+$sz-services:
+('share',       '\e906', '#666666', '#fff'),
+('facebook',    '\e900', '#3b5998', '#fff'),
+('google-plus', '\e901', '#dd4b39', '#fff'),
+('instagram',   '\e902', '#517fa4', '#fff'),
+('linkedin',    '\e903', '#007bb6', '#fff'),
+('pinterest',   '\e904', '#cb2027', '#fff'),
+('twitter',     '\e907', '#00aced', '#fff'),
+('youtube',     '\e908', '#bb0000', '#fff'),
+('print',       '\e905', '#666666', '#fff');
+
+//
+// Icon font
+//
 
 @font-face {
 	font-family: 'socialize';
@@ -11,84 +50,90 @@
 	font-style: normal;
 }
 
-.socialize {
+//
+// CSS styles
+//
+
+[data-socialize] {
 	margin-bottom: 32px;
-}
 
-.sz {
-	font-size: $sz-icon-size;
-	/* use !important to prevent issues with browser extensions that change fonts */
-	font-family: 'socialize' !important;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	text-decoration: none;
-	line-height: 1;
+	.sz {
+		font-size: $sz-icon-size;
+		/* use !important to prevent issues with browser extensions that change fonts */
+		font-family: 'socialize' !important;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		text-decoration: none;
+		line-height: 1;
 
-	color: $sz-default-col;
-	background-color: $sz-default-bgcol;
+		color: $sz-default-col;
+		background-color: $sz-default-bgcol;
 
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+		/* Better Font Rendering =========== */
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 
-	&:before {
-		display: inline-block;
-		width: 1em;
-		height: 1em;
+		&:before {
+			display: inline-block;
+			width: 1em;
+			height: 1em;
+		}
+	}
+
+	&.filled > .sz:before {
+		color: $sz-filled-col;
+		background-color: $sz-filled-bgcol;
+	}
+	&.rounded > .sz,
+	&.rounded > .sz:before {
+		border-radius: 100%;
 	}
 }
 
-.socialize.filled > .sz:before {
-	color: $sz-filled-col;
-	background-color: $sz-filled-bgcol;
-}
-.socialize.rounded > .sz,
-.socialize.rounded > .sz:before {
-	border-radius: 100%;
-}
+
 
 @each $sz-service in $sz-services {
-  .socialize > .sz-#{nth($sz-service,1)} {
+  [data-socialize] > .sz-#{nth($sz-service,1)} {
     &:before {
       content: '#{nth($sz-service,2)}';
     }
   }
-	.socialize > a.sz.sz-#{nth($sz-service,1)}:hover {
+	[data-socialize] > a.sz.sz-#{nth($sz-service,1)}:hover {
 		&:before {
 			color: #{nth($sz-service,3)};
 		}
 	}
-	.socialize.mono > a.sz.sz-#{nth($sz-service,1)}:hover {
+	[data-socialize].mono > a.sz.sz-#{nth($sz-service,1)}:hover {
 		&:before {
 			color: $sz-mono-hover-col;
 		}
 	}
-	.socialize.colored > .sz-#{nth($sz-service,1)} {
+	[data-socialize].colored > .sz-#{nth($sz-service,1)} {
 		&:before {
 			color: #{nth($sz-service,3)};
 		}
 	}
-  .socialize.colored > a.sz.sz-#{nth($sz-service,1)}:hover {
+  [data-socialize].colored > a.sz.sz-#{nth($sz-service,1)}:hover {
     &:before {
       color: $sz-colored-hover-col;
     }
   }
-	.socialize.filled > a.sz.sz-#{nth($sz-service,1)}:hover {
+	[data-socialize].filled > a.sz.sz-#{nth($sz-service,1)}:hover {
 		&:before {
 			background-color: #{nth($sz-service,3)};
 			color: #{nth($sz-service,4)};
 		}
 	}
-	.socialize.filled.colored > .sz-#{nth($sz-service,1)} {
+	[data-socialize].filled.colored > .sz-#{nth($sz-service,1)} {
 		&:before {
 			background-color: #{nth($sz-service,3)};
 			color: #{nth($sz-service,4)};
 		}
 	}
-	.socialize.filled.colored > a.sz.sz-#{nth($sz-service,1)} {
+	[data-socialize].filled.colored > a.sz.sz-#{nth($sz-service,1)} {
 		&:hover {
 			&:before {
 				background-color: $sz-filled-hover-bgcol;

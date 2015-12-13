@@ -21,13 +21,98 @@
       float: left;
     }
   </style>
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Socialize"/>
+  <meta property="og:site_name" content="Social media sharing widget"/>
+  <meta property="og:image" content="https://raw.githubusercontent.com/carloscabo/socialize/master/snapshot.png"/>
+
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+  <script src="js/socialize.js"></script>
+
 </head>
 <body>
 
+  <div class="demo">
+    <h1>With rollover &lt;a&gt;</h1>
+
+    <div data-socialize>
+      <a href="#" class="sz sz-share"></a>
+      <a href="#" class="sz sz-facebook"></a>
+      <a href="#" class="sz sz-google-plus"></a>
+      <a href="#" class="sz sz-instagram"></a>
+      <a href="#" class="sz sz-linkedin"></a>
+      <a href="#" class="sz sz-pinterest"></a>
+      <a href="#" class="sz sz-twitter"></a>
+      <a href="#" class="sz sz-youtube"></a>
+      <a href="#" class="sz sz-print"></a>
+    </div>
+
+    <div data-socialize class="mono">
+      <a href="#" class="sz sz-share"></a>
+      <a href="#" class="sz sz-facebook"></a>
+      <a href="#" class="sz sz-google-plus"></a>
+      <a href="#" class="sz sz-instagram"></a>
+      <a href="#" class="sz sz-linkedin"></a>
+      <a href="#" class="sz sz-pinterest"></a>
+      <a href="#" class="sz sz-twitter"></a>
+      <a href="#" class="sz sz-youtube"></a>
+      <a href="#" class="sz sz-print"></a>
+    </div>
+
+    <div data-socialize class="colored">
+      <a href="#" class="sz sz-share"></a>
+      <a href="#" class="sz sz-facebook"></a>
+      <a href="#" class="sz sz-google-plus"></a>
+      <a href="#" class="sz sz-instagram"></a>
+      <a href="#" class="sz sz-linkedin"></a>
+      <a href="#" class="sz sz-pinterest"></a>
+      <a href="#" class="sz sz-twitter"></a>
+      <a href="#" class="sz sz-youtube"></a>
+      <a href="#" class="sz sz-print"></a>
+    </div>
+
+    <div data-socialize class="filled">
+      <a href="#" class="sz sz-share"></a>
+      <a href="#" class="sz sz-facebook"></a>
+      <a href="#" class="sz sz-google-plus"></a>
+      <a href="#" class="sz sz-instagram"></a>
+      <a href="#" class="sz sz-linkedin"></a>
+      <a href="#" class="sz sz-pinterest"></a>
+      <a href="#" class="sz sz-twitter"></a>
+      <a href="#" class="sz sz-youtube"></a>
+      <a href="#" class="sz sz-print"></a>
+    </div>
+
+    <div data-socialize class="filled rounded">
+      <a href="#" class="sz sz-share"></a>
+      <a href="#" class="sz sz-facebook"></a>
+      <a href="#" class="sz sz-google-plus"></a>
+      <a href="#" class="sz sz-instagram"></a>
+      <a href="#" class="sz sz-linkedin"></a>
+      <a href="#" class="sz sz-pinterest"></a>
+      <a href="#" class="sz sz-twitter"></a>
+      <a href="#" class="sz sz-youtube"></a>
+      <a href="#" class="sz sz-print"></a>
+    </div>
+
+    <div data-socialize class="filled rounded colored">
+      <a href="#" class="sz sz-share"></a>
+      <a href="#" class="sz sz-facebook"></a>
+      <a href="#" class="sz sz-google-plus"></a>
+      <a href="#" class="sz sz-instagram"></a>
+      <a href="#" class="sz sz-linkedin"></a>
+      <a href="#" class="sz sz-pinterest"></a>
+      <a href="#" class="sz sz-twitter"></a>
+      <a href="#" class="sz sz-youtube"></a>
+      <a href="#" class="sz sz-print"></a>
+    </div>
+</div>
+
 <div class="demo">
-  <h1>Without rollover &lt;i&gt; </h1>
+  <h1>Static version &lt;i&gt; </h1>
 
-  <div class="socialize">
+  <div data-socialize>
     <i class="sz sz-share"></i>
     <i class="sz sz-facebook"></i>
     <i class="sz sz-google-plus"></i>
@@ -39,7 +124,7 @@
     <i class="sz sz-print"></i>
   </div>
 
-  <div class="socialize colored">
+  <div data-socialize class="colored">
     <i class="sz sz-share"></i>
     <i class="sz sz-facebook"></i>
     <i class="sz sz-google-plus"></i>
@@ -51,7 +136,7 @@
     <i class="sz sz-print"></i>
   </div>
 
-  <div class="socialize filled">
+  <div data-socialize class="filled">
     <i class="sz sz-share"></i>
     <i class="sz sz-facebook"></i>
     <i class="sz sz-google-plus"></i>
@@ -63,7 +148,7 @@
     <i class="sz sz-print"></i>
   </div>
 
-  <div class="socialize filled rounded">
+  <div data-socialize class="filled rounded">
     <i class="sz sz-share"></i>
     <i class="sz sz-facebook"></i>
     <i class="sz sz-google-plus"></i>
@@ -75,7 +160,7 @@
     <i class="sz sz-print"></i>
   </div>
 
-  <div class="socialize filled rounded colored">
+  <div data-socialize class="filled rounded colored">
     <i class="sz sz-share"></i>
     <i class="sz sz-facebook"></i>
     <i class="sz sz-google-plus"></i>
@@ -90,83 +175,7 @@
 </div>
 
 
-<div class="demo">
-  <h1>With rollover &lt;a&gt;</h1>
 
-  <div class="socialize">
-    <a href="#" class="sz sz-share"></a>
-    <a href="#" class="sz sz-facebook"></a>
-    <a href="#" class="sz sz-google-plus"></a>
-    <a href="#" class="sz sz-instagram"></a>
-    <a href="#" class="sz sz-linkedin"></a>
-    <a href="#" class="sz sz-pinterest"></a>
-    <a href="#" class="sz sz-twitter"></a>
-    <a href="#" class="sz sz-youtube"></a>
-    <a href="#" class="sz sz-print"></a>
-  </div>
-
-  <div class="socialize mono">
-    <a href="#" class="sz sz-share"></a>
-    <a href="#" class="sz sz-facebook"></a>
-    <a href="#" class="sz sz-google-plus"></a>
-    <a href="#" class="sz sz-instagram"></a>
-    <a href="#" class="sz sz-linkedin"></a>
-    <a href="#" class="sz sz-pinterest"></a>
-    <a href="#" class="sz sz-twitter"></a>
-    <a href="#" class="sz sz-youtube"></a>
-    <a href="#" class="sz sz-print"></a>
-  </div>
-
-  <div class="socialize colored">
-    <a href="#" class="sz sz-share"></a>
-    <a href="#" class="sz sz-facebook"></a>
-    <a href="#" class="sz sz-google-plus"></a>
-    <a href="#" class="sz sz-instagram"></a>
-    <a href="#" class="sz sz-linkedin"></a>
-    <a href="#" class="sz sz-pinterest"></a>
-    <a href="#" class="sz sz-twitter"></a>
-    <a href="#" class="sz sz-youtube"></a>
-    <a href="#" class="sz sz-print"></a>
-  </div>
-
-  <div class="socialize filled">
-    <a href="#" class="sz sz-share"></a>
-    <a href="#" class="sz sz-facebook"></a>
-    <a href="#" class="sz sz-google-plus"></a>
-    <a href="#" class="sz sz-instagram"></a>
-    <a href="#" class="sz sz-linkedin"></a>
-    <a href="#" class="sz sz-pinterest"></a>
-    <a href="#" class="sz sz-twitter"></a>
-    <a href="#" class="sz sz-youtube"></a>
-    <a href="#" class="sz sz-print"></a>
-  </div>
-
-  <div class="socialize filled rounded">
-    <a href="#" class="sz sz-share"></a>
-    <a href="#" class="sz sz-facebook"></a>
-    <a href="#" class="sz sz-google-plus"></a>
-    <a href="#" class="sz sz-instagram"></a>
-    <a href="#" class="sz sz-linkedin"></a>
-    <a href="#" class="sz sz-pinterest"></a>
-    <a href="#" class="sz sz-twitter"></a>
-    <a href="#" class="sz sz-youtube"></a>
-    <a href="#" class="sz sz-print"></a>
-  </div>
-
-  <div class="socialize filled rounded colored">
-    <a href="#" class="sz sz-share"></a>
-    <a href="#" class="sz sz-facebook"></a>
-    <a href="#" class="sz sz-google-plus"></a>
-    <a href="#" class="sz sz-instagram"></a>
-    <a href="#" class="sz sz-linkedin"></a>
-    <a href="#" class="sz sz-pinterest"></a>
-    <a href="#" class="sz sz-twitter"></a>
-    <a href="#" class="sz sz-youtube"></a>
-    <a href="#" class="sz sz-print"></a>
-  </div>
-
-
-</div>
 
 
 </body>
