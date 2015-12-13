@@ -3,6 +3,8 @@ Social media icons in font, and share functionallity in JS (WIP).
 
 <img src="https://raw.githubusercontent.com/carloscabo/socialize/master/snapshot.png">
 
+<mark>Please, take a look to the `demo.html` included in this repo before integrating socialize in your project, its the best way to see how must be configured.</mark>
+
 # usage
 1. Copy the socialize fonts in to your project.
 2. Edit the path to them in `socialize.scss`
@@ -25,6 +27,9 @@ Social media icons in font, and share functionallity in JS (WIP).
 </div>
 ````
 
+# extending and adding new icons
+
+In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, if you need to add a new icon, add it to this file, export an `svg` and use **IconMoon** service to regenerate the **socialize font**.
+
 # TO-DO
 socialize.js
-Sample and usage
