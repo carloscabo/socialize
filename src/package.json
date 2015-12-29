@@ -1,6 +1,0 @@
-{
-  "devDependencies": {
-    "gulp": "~3.8.11",
-    "svgo": "^0.6.1"
-  }
-}
