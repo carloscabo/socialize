@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-iconfont": "^5.0.1",
+    "svgo": "^0.6.1"
+  }
+}
