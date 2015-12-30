@@ -1,5 +1,7 @@
-var iconfont = require('gulp-iconfont');
-var runTimestamp = Math.round(Date.now()/1000);
+var
+  gulp     = require('gulp'),
+  iconfont = require('gulp-iconfont'),
+  runTimestamp = Math.round(Date.now()/1000);
 
 gulp.task('build-font', function(){
   return gulp.src(['src/svg/*.svg'])
