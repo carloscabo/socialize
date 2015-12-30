@@ -1,0 +1,97 @@
+@font-face {
+	font-family: "socialize";
+	src: url('/fonts/socialize/socialize.eot');
+	src: url('/fonts/socialize/socialize.eot?#iefix') format('eot'),
+		url('/fonts/socialize/socialize.woff') format('woff'),
+		url('/fonts/socialize/socialize.ttf') format('truetype'),
+		url('/fonts/socialize/socialize.svg#socialize') format('svg');
+}
+
+@mixin icon-styles {
+	font-family: "socialize";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	// speak: none; // only necessary if not using the private unicode range (firstGlyph option)
+	text-decoration: none;
+	text-transform: none;
+}
+
+%icon {
+	@include icon-styles;
+}
+
+@function icon-char($filename) {
+	$char: "";
+
+	@if $filename == uEA01-sz-facebook {
+		$char: "\E001";
+	}
+	@if $filename == uEA02-sz-google-plus {
+		$char: "\E002";
+	}
+	@if $filename == uEA03-sz-instagram {
+		$char: "\E003";
+	}
+	@if $filename == uEA04-sz-linkedin {
+		$char: "\E004";
+	}
+	@if $filename == uEA05-sz-pinterest {
+		$char: "\E005";
+	}
+	@if $filename == uEA06-sz-print {
+		$char: "\E006";
+	}
+	@if $filename == uEA07-sz-share {
+		$char: "\E007";
+	}
+	@if $filename == uEA08-sz-twitter {
+		$char: "\E008";
+	}
+	@if $filename == uEA09-sz-youtube {
+		$char: "\E009";
+	}
+
+	@return $char;
+}
+
+@mixin icon($filename, $insert: before, $extend: true) {
+	&:#{$insert} {
+		@if $extend {
+			@extend %icon;
+		} @else {
+			@include icon-styles;
+		}
+		content: icon-char($filename);
+	}
+}
+
+.icon-uEA01-sz-facebook {
+	@include icon(uEA01-sz-facebook);
+}
+.icon-uEA02-sz-google-plus {
+	@include icon(uEA02-sz-google-plus);
+}
+.icon-uEA03-sz-instagram {
+	@include icon(uEA03-sz-instagram);
+}
+.icon-uEA04-sz-linkedin {
+	@include icon(uEA04-sz-linkedin);
+}
+.icon-uEA05-sz-pinterest {
+	@include icon(uEA05-sz-pinterest);
+}
+.icon-uEA06-sz-print {
+	@include icon(uEA06-sz-print);
+}
+.icon-uEA07-sz-share {
+	@include icon(uEA07-sz-share);
+}
+.icon-uEA08-sz-twitter {
+	@include icon(uEA08-sz-twitter);
+}
+.icon-uEA09-sz-youtube {
+	@include icon(uEA09-sz-youtube);
+}
