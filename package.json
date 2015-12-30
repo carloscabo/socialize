@@ -2,6 +2,7 @@
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-iconfont": "^5.0.1",
+    "gulp-iconfont-css": "^2.0.0",
     "svgo": "^0.6.1"
   }
 }
