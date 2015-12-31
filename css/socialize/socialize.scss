@@ -8,6 +8,9 @@ $sz-font-path: '/fonts/socialize';
 // Icon sise
 $sz-icon-size: 48px;
 
+// Scale factor, determines the "padding" around the icons...
+$sz-icon-padding: 1.2em;
+
 // Default icons with transparent background
 $sz-default-col:         #ccc;
 $sz-default-bgcol:       transparent;
@@ -61,6 +64,8 @@ $sz-services:
 	margin-bottom: 32px;
 
 	.sz {
+		background-color: $sz-default-bgcol;
+
 		font-size: $sz-icon-size;
 		/* use !important to prevent issues with browser extensions that change fonts */
 		font-family: 'socialize' !important;
@@ -73,7 +78,6 @@ $sz-services:
 		line-height: 1;
 
 		color: $sz-default-col;
-		background-color: $sz-default-bgcol;
 
 		/* Better Font Rendering =========== */
 		-webkit-font-smoothing: antialiased;
@@ -81,8 +85,10 @@ $sz-services:
 
 		&:before {
 			display: inline-block;
-			width: 1em;
-			height: 1em;
+			width: $sz-icon-padding;
+			height: $sz-icon-padding;
+			text-align: center;
+			line-height: $sz-icon-padding;
 		}
 	}
 

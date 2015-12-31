@@ -63,14 +63,13 @@ When usign **data-attributes** urls be sure to include **absolute paths**, most 
 
 ## extending and adding new icons
 
-In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, if you need to add a new icon, add it to this file, export an `svg` and use **IconMoon** service to regenerate the **socialize font**.
+In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, if you need to add a new icon, add it to this file, export an `svg`. There is a `gulp build-font` task. <mark>**Yo'll need to revise the _socialize.scss to be sure to add the new icons**</mark>
 
 ## known issues
 
 - If you are in `localhost` the sharing functionallity can fail, as some of the services get the data from the url.
 
 ## TO-DO
-
-- Intesive testing
+- ¿Generate _socialize.scss automatically? Woth the effort?
 - Add more services
   - Share by email

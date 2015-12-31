@@ -16,6 +16,9 @@ gulp.task('build-font', function(){
     }))*/
     .pipe(iconfont({
       fontName: font_name, // required
+      fontHeight: 512,
+      normalize: false,
+      centerHorizontally: false,
       appendUnicode: true, // recommended option
       formats: ['ttf', 'eot', 'woff', 'svg'], // default, 'woff2' and 'svg' are available
       timestamp: runTimestamp, // recommended to get consistent builds when watching files
