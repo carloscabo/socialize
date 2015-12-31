@@ -77,6 +77,6 @@ In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, 
 - If you are in `localhost` the sharing functionallity can fail, as some of the services get the data from the url.
 
 ## TO-DO
-- ¿Generate _socialize.scss automatically? Woth the effort?
+- ¿Generate _socialize.scss automatically? Worth the effort?
 - Add more services
   - Share by email
