@@ -25,6 +25,13 @@ Social media icons in font, and share functionallity in JS (WIP).
   <a href="#" class="sz sz-youtube"></a>
   <a href="#" class="sz sz-print"></a>
 </div>
+
+<!-- Also... -->
+<div data-socialize class="filled rounded colored">
+  <i class="sz sz-facebook"></i>
+  <i class="sz sz-instagram"></i>
+  <i class="sz sz-twitter"></i>
+</div>
 ````
 
 ## data to be shared
@@ -50,9 +57,9 @@ But you can also define other data adding data-attributes to the share links, ad
   ...
 ````
 
-When usign **data-attributes** urls be sure to include **absolute paths**, most of the services dont admit relative URLs.
+When using **data-attributes** urls be sure to include **absolute paths**, most of the services don't admit relative URLs.
 
-## services workin right now
+## services working right now
 
 - facebook
 - Twitter
