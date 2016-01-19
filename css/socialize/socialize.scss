@@ -67,7 +67,6 @@ $sz-services:
 	.sz {
 		background-color: $sz-default-bgcol;
 
-		font-size: $sz-icon-size;
 		/* use !important to prevent issues with browser extensions that change fonts */
 		font-family: 'socialize' !important;
 		speak: none;
@@ -88,6 +87,8 @@ $sz-services:
 			display: inline-block;
 			width: $sz-icon-padding;
 			height: $sz-icon-padding;
+
+			font-size: $sz-icon-size;
 			text-align: center;
 			line-height: $sz-icon-padding;
 		}
