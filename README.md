@@ -66,6 +66,7 @@ When using **data-attributes** urls be sure to include **absolute paths**, most 
 - Pinterest
 - LinkedIn
 - Google Plus
+- Flickr
 - Print
 
 ## extending and adding new icons
@@ -80,3 +81,6 @@ In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, 
 - ¿Generate _socialize.scss automatically? Worth the effort?
 - Add more services
   - Share by email
+
+## updates
+- 2016 / 01 / 19 Added Flickr icon
