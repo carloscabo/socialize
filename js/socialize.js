@@ -31,7 +31,7 @@
           case 'twitter':
             var p = { // Params
               url: data.url,
-              text: data.desc,
+              text: data.title,
               count: 'none/'
             };
             u = 'http://twitter.com/share?'+$.param(p);
