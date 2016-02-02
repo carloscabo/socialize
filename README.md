@@ -84,3 +84,4 @@ In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, 
 
 ## updates
 - 2016 / 01 / 19 Added Flickr icon
+- 2016 / 02 / 02 Added Pinterest alternate
