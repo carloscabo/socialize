@@ -1,6 +1,6 @@
 /**
   * Socialize. Simple social media sharing widget
-  * Carlos Cabo 2015. V 1.0
+  * Carlos Cabo 2015. V 1.02
   * https://github.com/carloscabo/socialize
   */
 
@@ -18,6 +18,7 @@
         e.preventDefault();
         var
           data = {},
+          p = {}, // Params
           u = ''; // Final url
 
         // Data to be shared
@@ -29,7 +30,7 @@
 
         switch (data.target) {
           case 'twitter':
-            var p = { // Params
+            p = { // Params
               url: data.url,
               text: data.title,
               count: 'none/'
@@ -45,7 +46,7 @@
             /*
               WARNING: Facebook no longer admits a sharing URL with parameters, openGraph tags are mandatory! :(
             */
-            var p = { // Params
+            p = { // Params
               u: data.url
             };
             u = 'http://www.facebook.com/sharer.php?'+$.param(p);
@@ -56,7 +57,7 @@
             );
           break;
           case 'pinterest':
-            var p = {
+            p = {
               url: data.url,
               // media: media,
               description: data.desc
@@ -70,7 +71,7 @@
             );
           break;
           case 'google-plus':
-            var p = { // Params
+            p = { // Params
               v: 'compose',
               content: data.url
             };
@@ -82,7 +83,7 @@
             );
           break;
           case 'linkedin':
-            var p = { // Params
+            p = { // Params
               mini: 'true',
               url: data.url,
               title: data.title,
@@ -100,7 +101,7 @@
             window.print();
           break;
           case 'vk':
-            var p = {
+            p = {
               url: data.url
             };
             u = 'http://vkontakte.ru/share.php?'+$.param(p);
@@ -110,8 +111,8 @@
               'width=500,height=400'
             );
           break;
-          case "sinaweibo":
-            var p = {
+          case 'sinaweibo':
+            p = {
               url: data.url, // replace(".com", ".cn"),
               description: data.desc
             };
@@ -121,6 +122,12 @@
               'sinaweibo',
               'width=500,height=400'
             );
+          break;
+          case 'mail':
+            // This one combines the params by hand as $.param encondes spaces
+            // By default shares description + url, and title as subject
+            u = 'mailto:?subject='+encodeURIComponent(data.title)+'&body='+encodeURIComponent(data.desc)+'%0D%0A%0D%0A'+encodeURIComponent(data.url);
+            $('<a>').attr('href', u)[0].click();
           break;
           default:
             // Default?

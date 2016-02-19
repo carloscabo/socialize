@@ -14,16 +14,20 @@ Social media icons in font, and share functionallity in JS (WIP).
 
 ## sample HTML block
 ````html
-<div data-socialize class="filled rounded colored">
+<div data-socialize>
   <a href="#" class="sz sz-share"></a>
   <a href="#" class="sz sz-facebook"></a>
   <a href="#" class="sz sz-google-plus"></a>
   <a href="#" class="sz sz-instagram"></a>
   <a href="#" class="sz sz-linkedin"></a>
   <a href="#" class="sz sz-pinterest"></a>
+  <a href="#" class="sz sz-pinterest-alt"></a>
   <a href="#" class="sz sz-twitter"></a>
   <a href="#" class="sz sz-youtube"></a>
+  <a href="#" class="sz sz-flickr"></a>
+  <a href="#" class="sz sz-vimeo"></a>
   <a href="#" class="sz sz-print"></a>
+  <a href="#" class="sz sz-mail"></a>
 </div>
 
 <!-- Also... -->
@@ -48,7 +52,7 @@ By default `socialize` shares the data available in the `OpenGraph` tags in the 
 But you can also define other data adding data-attributes to the share links, adding `data-url`, `data-image`, `data-desc`, `data-image`, this way:
 ````html
 <div data-socialize class="filled rounded colored">
-  <a href="#" class="sz sz-share"
+  <a href="#" class="sz sz-SOCIAL-NETWORK"
     data-url="Custom url"
     data-title="Custom title"
     data-desc="Custom description"
@@ -67,6 +71,8 @@ When using **data-attributes** urls be sure to include **absolute paths**, most 
 - LinkedIn
 - Google Plus
 - Flickr
+- Vimeo
+- Email
 - Print
 
 ## extending and adding new icons
@@ -83,5 +89,6 @@ In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, 
   - Share by email
 
 ## updates
-- 2016 / 01 / 19 Added Flickr icon
+- 2016 / 02 / 19 Added share by email functionallity and Vimeo icon
 - 2016 / 02 / 02 Added Pinterest alternate
+- 2016 / 01 / 19 Added Flickr icon
