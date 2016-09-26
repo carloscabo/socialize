@@ -4,19 +4,20 @@
   * https://github.com/carloscabo/socialize
   */
 
-  $(document).ready(function() {
-    // La magia aquí
+(function($){
 
-    var
-      $doc = $(document),
-      da   = 'data-socialize', // Data attribute: data-socialize
-      $els = $('['+da+']');
+  $.fn.socialize = function() {
 
-    if ($els.length) {
+    return this.each(function() {
+      new Socialize(this);
+    });
 
-      $doc.on('click', '['+da+'] a.sz', function(e) {
+    function Socialize(el) {
+      $(el).find('a.sz').on('click', function(e) {
+
         e.preventDefault();
         var
+          $doc = $(document),
           data = {},
           p = {}, // Params
           u = ''; // Final url
@@ -134,6 +135,13 @@
           break;
         }
 
+
       });
     }
-  });
+
+  };
+
+})(jQuery);
+
+// usage
+// $('[data-socialize]').socialize();

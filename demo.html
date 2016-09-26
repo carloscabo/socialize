@@ -43,14 +43,21 @@
   <!-- JS -->
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
   <script src="js/socialize.js"></script>
+  <script>
+
+    $(document).ready(function(){
+      //La magia aquí
+      $('div.js-sample[data-socialize]').socialize();
+    });
+  </script>
 
 </head>
 <body>
 
   <div class="demo">
-    <h1>With rollover &lt;a&gt;</h1>
+    <h1>With rollover &lt;a&gt;, and sharing functionallity using JS</h1>
 
-    <div data-socialize>
+    <div data-socialize class="js-sample">
       <a href="#" class="sz sz-share"></a>
       <a href="#" class="sz sz-facebook"></a>
       <a href="#" class="sz sz-google-plus"></a>
@@ -65,6 +72,9 @@
       <a href="#" class="sz sz-print"></a>
       <a href="#" class="sz sz-mail"></a>
     </div>
+    <br><br>
+
+    <h1>Other styling alternatives</h1>
 
     <div data-socialize class="mono">
       <a href="#" class="sz sz-share"></a>
@@ -148,7 +158,8 @@
 </div>
 
 <div class="demo">
-  <h1>Static version &lt;i&gt; </h1>
+  <br><br>
+  <h1>Static version using &lt;i&gt; tag</h1>
 
   <div data-socialize>
     <i class="sz sz-share"></i>

@@ -3,16 +3,19 @@ Social media icons in font, and share functionallity in JS (WIP).
 
 <img src="https://raw.githubusercontent.com/carloscabo/socialize/master/snapshot.png">
 
-**Please, take a look to the `demo.html` included in this repo before integrating socialize in your project, its the best way to see how must be configured.**
+**Please, take a look to the [demo.html](https://raw.githubusercontent.com/carloscabo/socialize/master/demo.html) included in this repo before integrating socialize in your project, it's the best way to see how must be configured.**
 
 # usage
+
 1. Copy the socialize fonts in to your project.
 2. Edit the path to them in `socialize.scss`
 3. Add data-attribute `data-socialize` to the buttons container.
 4. Include `socialize.js`.
 5. For Facebook and Pinterest be sure to include the `OpenGraph` info in the header.
+6. Initialize the `js` functionallity in your `ready.js`.
 
 ## sample HTML block
+
 ````html
 <div data-socialize>
   <a href="#" class="sz sz-share"></a>
@@ -37,6 +40,17 @@ Social media icons in font, and share functionallity in JS (WIP).
   <i class="sz sz-twitter"></i>
 </div>
 ````
+
+## initialize the share functionallitty
+
+Initiallize the sharing functionallilly over the `data-socialize` conatainer you want this way:
+
+```javascript
+$(document).ready(function() {
+  // Initialize al the data-socialize containers
+  $('[data-socialize]').socialize();
+});
+```
 
 ## data to be shared
 
@@ -81,7 +95,7 @@ In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, 
 
 ## known issues
 
-- If you are in `localhost` the sharing functionallity can fail, as some of the services get the data from the url.
+- If you are in `localhost` the sharing functionallity can fail, as some of the services ( as Facebook ) get the data from the url.
 
 ## TO-DO
 - ¿Generate _socialize.scss automatically? Worth the effort?
@@ -89,6 +103,7 @@ In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, 
   - Share by email
 
 ## updates
-- 2016 / 02 / 19 Added share by email functionallity and Vimeo icon
+- 2016 / 02 / 19 V 1.12 Changed initilization function to be manual
+- 2016 / 02 / 19 V 1.02 Added share by email functionallity and Vimeo icon
 - 2016 / 02 / 02 Added Pinterest alternate
 - 2016 / 01 / 19 Added Flickr icon
