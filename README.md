@@ -1,25 +1,7 @@
-<style>
-.alert.tip {
-  position: relative;
-  margin: 0 auto;
-  padding: 15px;
-  font-size: 12px;
-  color: #264c72;
-  border: 1px solid #97c1da;
-  border-radius: 3px;
-  background-color: #d8ebf8;
-  background: -moz-linear-gradient(#d8ebf8,#d0e3ef);
-  background: -webkit-linear-gradient(#d8ebf8,#d0e3ef);
-  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#d8ebf8', endColorstr='#d0e3ef')";
-  box-shadow: 0 1px 3px rgba(0,0,0,.1);
-  text-shadow: 0 1px 0 rgba(255,255,255,.8);
-}
-</style>
-
 # socialize
 Social media icons in font, and share functionallity in JS (WIP).
 
-<div class="alert tip">
+<div class="padding:15px;color:#264c72;border:1px solid #97c1da;border-radius: 3px;background-color: #d8ebf8;box-shadow:0 1px 3px rgba(0,0,0,.1);">
 Please, take a look to the [demo.html](https://rawgit.com/carloscabo/socialize/master/demo.html) included in this repo before integrating socialize in your project, it's the best way to see how must be configured.
 </div>
 
