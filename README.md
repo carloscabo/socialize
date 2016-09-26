@@ -1,7 +1,9 @@
 # socialize
 Social media icons in font, and share functionallity in JS (WIP).
 
-**Please, take a look to the [demo.html](https://rawgit.com/carloscabo/socialize/master/demo.html) included in this repo before integrating socialize in your project, it's the best way to see how must be configured.**
+<div class="alert tip">
+Please, take a look to the [demo.html](https://rawgit.com/carloscabo/socialize/master/demo.html) included in this repo before integrating socialize in your project, it's the best way to see how must be configured.
+</div>
 
 <img src="https://raw.githubusercontent.com/carloscabo/socialize/master/snapshot.png">
 
@@ -95,7 +97,9 @@ In the `src` folder there is an `Adobe Illustrator CS5` file with icons inside, 
 
 ## known issues
 
-- If you are in `localhost` the sharing functionallity can fail, as some of the services ( as Facebook ) get the data from the url.
+<div class="alert tip">
+If you are in `localhost` the sharing functionallity can fail, as some of the services ( as Facebook ) get the data from the url.
+</div>
 
 ## TO-DO
 - ¿Generate _socialize.scss automatically? Worth the effort?
