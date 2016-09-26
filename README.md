@@ -1,9 +1,9 @@
 # socialize
 Social media icons in font, and share functionallity in JS (WIP).
 
-<img src="https://raw.githubusercontent.com/carloscabo/socialize/master/snapshot.png">
-
 **Please, take a look to the [demo.html](https://rawgit.com/carloscabo/socialize/master/demo.html) included in this repo before integrating socialize in your project, it's the best way to see how must be configured.**
+
+<img src="https://raw.githubusercontent.com/carloscabo/socialize/master/snapshot.png">
 
 # usage
 
@@ -41,13 +41,13 @@ Social media icons in font, and share functionallity in JS (WIP).
 </div>
 ````
 
-## initialize the share functionallitty
+## initialize the share functionallity
 
-Initiallize the sharing functionallilly over the `data-socialize` conatainer you want this way:
+Initiallize the sharing functionallity over the `data-socialize` container (normally a '<div>') you want this way:
 
 ```javascript
 $(document).ready(function() {
-  // Initialize al the data-socialize containers
+  // Initialize al the data-socialize containers in the page!
   $('[data-socialize]').socialize();
 });
 ```
