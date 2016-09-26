@@ -1,7 +1,7 @@
 # socialize
 Social media icons in font, and share functionallity in JS (WIP).
 
-** Please, take a look to the [demo.html](https://rawgit.com/carloscabo/socialize/master/demo.html) included in this repo before integrating socialize in your project, it's the best way to see how must be configured.**
+**Please, take a look to the [demo.html](https://rawgit.com/carloscabo/socialize/master/demo.html) included in this repo before integrating socialize in your project, it's the best way to see how must be configured.**
 
 <img src="https://raw.githubusercontent.com/carloscabo/socialize/master/snapshot.png">
 
