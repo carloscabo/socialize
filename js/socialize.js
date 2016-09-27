@@ -17,7 +17,7 @@
 
         e.preventDefault();
         var
-          $doc = $(document),
+          $doc = $(document)
           data = {},
           p = {}, // Params
           u = ''; // Final url
@@ -73,9 +73,14 @@
           break;
           case 'google-plus':
             p = { // Params
-              // v: 'compose',
               url: data.url
+
+              // Mobile version
+              // v: 'compose',
+              // content: data.url
             };
+            // Mobile version
+            // u = 'https://m.google.com/app/plus/x/?'+$.param(p);
             u = 'https://plus.google.com/share?'+$.param(p);
             window.open(
               u,
