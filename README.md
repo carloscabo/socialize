@@ -43,7 +43,7 @@ Social media icons in font, and share functionallity in JS (WIP).
 
 ## initialize the share functionallity
 
-Initiallize the sharing functionallity over the `data-socialize` container (normally a '<div>') you want this way:
+Initiallize the sharing functionallity over the `data-socialize` container (normally a `<div>`) you want this way:
 
 ```javascript
 $(document).ready(function() {
