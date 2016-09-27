@@ -73,10 +73,10 @@
           break;
           case 'google-plus':
             p = { // Params
-              v: 'compose',
-              content: data.url
+              // v: 'compose',
+              url: data.url
             };
-            u = 'https://m.google.com/app/plus/x/?'+$.param(p);
+            u = 'https://plus.google.com/share?'+$.param(p);
             window.open(
               u,
               'Google Plus',
