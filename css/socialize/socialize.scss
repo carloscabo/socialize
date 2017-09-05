@@ -54,6 +54,7 @@ $sz-services:
 	src:url("#{$sz-font-path}/socialize.eot?anxeoc");
 	src:url("#{$sz-font-path}/socialize.eot?anxeoc#iefix") format("embedded-opentype"),
 		url("#{$sz-font-path}/socialize.ttf?anxeoc") format("truetype"),
+		url("#{$sz-font-path}/socialize.woff2?anxeoc") format("woff2"),
 		url("#{$sz-font-path}/socialize.woff?anxeoc") format("woff"),
 		url("#{$sz-font-path}/socialize.svg?anxeoc#socialize") format("svg");
 	font-weight: normal;
