@@ -1,4 +1,4 @@
-# socialize
+# socialize v1.18
 Social media icons in font, and share functionallity in JS (WIP).
 
 **Please, take a look to the [demo.html](https://rawgit.com/carloscabo/socialize/master/demo.html) included in this repo before integrating socialize in your project, it's the best way to see how must be configured.**
@@ -105,6 +105,7 @@ If you are in `localhost` the sharing functionallity can fail, as some of the se
   - Share by email
 
 ## updates
+- 2017 / 12 / 18 V 1.18 Fixed mailto: bug in Firefox
 - 2016 / 02 / 19 V 1.12 Changed initilization function to be manual
 - 2016 / 02 / 19 V 1.02 Added share by email functionallity and Vimeo icon
 - 2016 / 02 / 02 Added Pinterest alternate

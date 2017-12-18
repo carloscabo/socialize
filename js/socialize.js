@@ -1,6 +1,6 @@
 /**
   * Socialize. Simple social media sharing widget
-  * Carlos Cabo 2015. V 1.02
+  * Carlos Cabo 2015. v1.18
   * https://github.com/carloscabo/socialize
   */
 
@@ -133,7 +133,9 @@
             // This one combines the params by hand as $.param encondes spaces
             // By default shares description + url, and title as subject
             u = 'mailto:?subject='+encodeURIComponent(data.title)+'&body='+encodeURIComponent(data.desc)+'%0D%0A%0D%0A'+encodeURIComponent(data.url);
-            $('<a>').attr('href', u)[0].click();
+            var $a = $('<a style="display:none!important;">').attr('href', u).appendTo( $('body') );
+            $a[0].click();
+            $a.remove();
           break;
           default:
             // Default?
@@ -148,5 +150,5 @@
 
 })(jQuery);
 
-// usage
+// Usage
 // $('[data-socialize]').socialize();
