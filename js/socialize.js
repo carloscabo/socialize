@@ -1,6 +1,6 @@
 /**
   * Socialize. Simple social media sharing widget
-  * Carlos Cabo 2015. v1.18
+  * Carlos Cabo 2015. v1.19
   * https://github.com/carloscabo/socialize
   */
 
