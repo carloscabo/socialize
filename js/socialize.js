@@ -13,7 +13,7 @@
     });
 
     function Socialize(el) {
-      $(el).find('a.sz').on('click', function(e) {
+      $(el).find('.sz').on('click', function(e) {
 
         e.preventDefault();
         var
